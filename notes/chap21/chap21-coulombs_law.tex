@@ -1,4 +1,17 @@
+%\documentclass[letterpaper,12pt]{report}
 \documentclass[letterpaper,12pt]{article}
+
+% set 1" margins on 8.5" x 11" paper
+% top left is measured from 1", 1"
+\topmargin 0in
+\oddsidemargin 0in
+\evensidemargin 0in
+\headheight 0in
+\headsep 0in
+\topskip 0in
+\textheight 9in
+\textwidth 6.5in
+
 
 % Packages
 %\usepackage{graphicx}
@@ -23,6 +36,15 @@
 \author{Sam Nelson}
 \date{5/6/2020}
 \maketitle
+
+\setcounter{tocdepth}{1} % whether to display sub- or subsubsections in toc
+\tableofcontents
+
+% set these after the TOC
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+\setlength\arraycolsep{2pt}
+
 
 \section{Introduction}
 
@@ -175,7 +197,7 @@ In which $e$, the \textbf{elementary charge,} has the approximate value
 \section{Conservation of Charge}
 
 Charge is not created or destroyed, it is transfered. This hypothesis is known as \textbf{conservation of charge}.
-
+\\
 An example is the radioactive decay of uranium-238 ($\ce{^{238}_{}U}$).
 
 \begin{equation}
@@ -183,11 +205,17 @@ An example is the radioactive decay of uranium-238 ($\ce{^{238}_{}U}$).
 \end{equation}
 
 The \textit{parent} nucleus $\ce{^{238}_{}U}$ contains 92 protons, with a charge of $+92e$, the \textit{daughter} nucleus \ce{^{234}_{}Th} contains 90 protons, with a charge of $+90e$ and the emitted alpha particle \ce{^{4}_{}He} contains 2 protons, with a charge of $+2e$. Total charge is $+92e$ before and after the decay, thus charge is conserved.
-
+\\
 Another example of this charge conservation is when an electron $\mathrm{e}^-$ (charge $-e$) and its antiparticle, the \textit{positron} $\mathrm{e}^+$ (charge $+e$), undergo an \textit{annihilation process}, transforming into two \textit{gamma rays}:
 
 \begin{equation}
 	e^- + e^+ \longrightarrow \gamma + \gamma \quad \text{(annihilation).}
+\end{equation}
+
+In \textit{pair production}, charge is also conserved. Example, a gamma ray transforming into an electron and a positron:
+
+\begin{equation}
+	\gamma \longrightarrow e^- + e^+ \quad \text{(pair production).}
 \end{equation}
 
 \end{document}
